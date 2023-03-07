@@ -1,0 +1,195 @@
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+.logo{
+    /* background-image: url("/images/logo.jpg"); */
+    background-image: url("/logo.jpg");
+  
+    height: 225px;
+    width: 225px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  
+}
+
+  .bg-light{
+    background-color: white !important;
+  }
+
+
+
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-link.active {
+    border-top: 4px solid rgb(18, 17, 17);
+  }
+  
+  
+
+
+  .my-navbar .navbar-nav .nav-link {
+    color: rgb(116, 18, 18);
+  }
+  
+  // .Nav.Item{
+  //   color: red;
+  // }
+
+
+
+  .centered-navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .vertical-divider {
+    border-left: 1px solid #d19b1d;
+    height: 40px;
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 991.98px) {
+    .vertical-divider {
+      display: none;
+    }
+    .nav-highlight {
+      display: none;
+    }
+    .navbar-collapse {
+      justify-content: center;
+    }
+    .Nav.Link{
+      color: red;
+    }
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+  
+  .nav-highlight {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    width: 100px;
+    background-color: #007bff;
+  }
+  
+  .nav-highlight-inner {
+    height: 100%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  @media (max-width: 767.98px) {
+    .nav-highlight,
+    .nav-highlight-inner {
+      display: none;
+    }
+  }
+  
+
+
+
+  //resverse 
+
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+    
+    .navbar-nav .nav-link {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .navbar-nav .vertical-divider {
+      display: none;
+    }
+  }
+  
+  body {
+    direction: rtl;
+  }
+
+  
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* set the width of the icon container */
+    height: 30px; /* set the height of the icon container */
+    margin-right: 10px; /* add some spacing between icons */
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0; /* remove the margin-right from the last icon */
+  }
+  
+  .social-icons svg {
+    width: 16px; /* set the size of the icon */
+    height: 16px; /* set the size of the icon */
+  }
+  .social-icons a.snapchat svg {
+    fill: #666;
+  }
+  
+
+
+  // email and phone top left
+
+  .contact-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 4px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    z-index: 9999; /* set a high z-index to make sure the contact info is on top */
+  }
+  
+  .divider {
+    width: 1px;
+    height: 200px;
+    background-color: #ccc;
+    margin-right: 20px;
+    // display: inline;
+  }
+  
+  .info {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .info p {
+    display: inline-block; /* add this property to make the p elements behave like inline elements */
+    margin: 0; /* remove any margin */
+  }
+  
+  .info p:first-child {
+    margin-top: 0;
+  }
+  
+  .info p:last-child {
+    margin-bottom: 0;
+  }
+  
+
