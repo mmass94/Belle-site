@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import getConfig from "next/config";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
