@@ -17,7 +17,7 @@ const Footer = () => {
           </Col>
           <Col md={4} className="d-flex justify-content-center">
             <Image
-              src="/righfooterimg.png"
+              src="/righfooterimg.jpg"
               alt="Logo 3"
               width={250}
               height={250}
@@ -25,7 +25,7 @@ const Footer = () => {
           </Col>
           <Col md={4} className="d-flex justify-content-center">
             <Image
-              src="/leftfooterimg.png"
+              src="/leftfooterimg.jpg"
               alt="Logo 2"
               width={250}
               height={250}
